@@ -45,6 +45,7 @@ header a, footer a{
   font-weight: bolder;
 }
 header a:hover, footer a:hover{
+  color: rgb(170, 159, 159);
   text-decoration: underline;
 }
 
