@@ -10,18 +10,28 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    caption {
-      font-weight: bold;
-      font-size: 1.5em;
-      padding: 10px;
-    }
     table {
-      width: 400px;
+      width: 500px;
       border-collapse: collapse;
     }
+
+    caption {
+      font-weight: bolder;
+      font-size: 1.3em;
+      padding: 8px;
+    }
+
     th, td {
       border: 1px solid black;
-      padding: 10px;
+      padding: 8px;
+    }
+
+    .cnome {
+      background-color: aqua;
+    }
+
+    .csexo {
+      background-color: gray;
     }
   </style>
 </head>
@@ -29,12 +39,20 @@
     <h1>Exercício de Tabela</h1>
 
     <table>
+
+        <colgroup>
+               <col class="cnome">
+               <col class="csexo" span="3">
+               <!-- <col class="cidade">
+               <col class="cprofi"> -->
+        </colgroup>
         <caption>Cadastro</caption>
+
         <tr>
-           <th>Nome</th>
-           <th>Sexo</th>
-           <th>Idade</th>
-           <th>Profissão</th>
+           <th scope="col">Nome</th>
+           <th scope="col">Sexo</th>
+           <th scope="col">Idade</th>
+           <th scope="col">Profissão</th>
         </tr>
         <tr>
            <td>Ana Maria</td>
@@ -54,12 +72,23 @@
         <td>33</td>
         <td>Advogada</td>
      </tr>
-     <tr>
-      <td>Vitor Lopes</td>
+      <tr>
+        <td>Vitor Lopes</td>
+        <td>M</td>
+        <td>22</td>
+        <td>Engenheiro de Produção</td>
+    </tr>
+    <tr>
+      <td>Antonio</td>
       <td>M</td>
-      <td>22</td>
-      <td>Engenheiro de Produção</td>
-   </tr>
+      <td>28</td>
+      <td>Eletricista</td>
+ </tr>
+ <tr>
+  <td>Estefany</td>
+  <td>F</td>
+  <td>33</td>
+  <td>Advogada</td>
     </table>
   
 </body>
